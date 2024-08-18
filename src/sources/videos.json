@@ -1,0 +1,121 @@
+{
+  "apiKey": "AIzaSyB3C-Q1kv2loAJIuaR45qgxM2FaHjViBYQ",
+  "steps": {
+    "advanced": [
+      {
+        "youtubeId": "SqcY0GlETPk",
+        "title": "React js in short"
+      },
+      {
+        "youtubeId": "6wf5dIrryoQ",
+        "title": "All React Hooks Explained in 2 Hours | Complete React Hooks Tutorial with Example 2024"
+      },
+      {
+        "youtubeId": "HkWxvB1RJq0",
+        "title": "Higher-Order Functions ft. Functional Programming | Namaste JavaScript"
+      },
+      {
+        "youtubeId": "m_mtV4YaI8c",
+        "title": "React Component Lifecycle - Hooks / Methods Explained"
+      },
+      {
+        "youtubeId": "O6P86uwfdR0",
+        "title": "Learn useState In 15 Minutes - React Hooks Explained"
+      },
+      {
+        "youtubeId": "poQXNp9ItL4",
+        "title": "Redux Tutorial - Learn Redux from Scratch"
+      },
+      {
+        "youtubeId": "I2Bgi0Qcdvc",
+        "title": "Custom Hooks in React (Design Patterns)"
+      },
+      {
+        "youtubeId": "JU6sl_yyZqs",
+        "title": "Speed Up Your React Apps With Code Splitting"
+      },
+      {
+        "youtubeId": "D3d1lyDR3xc",
+        "title": "ReactJS Tutorial: What is DOM? Real DOM & Virtual DOM. Virtual DOM in React with Example 🔥"
+      },
+      {
+        "youtubeId": "p02AIAoImzU",
+        "title": "WTF Do These Even Mean"
+      },
+      {
+        "youtubeId": "oUZjO00NkhY",
+        "title": "React Protected Routes | Role-Based Authorization | React Router v6"
+      },
+      {
+        "youtubeId": "ML5egqL3YFE",
+        "title": "React Testing Tutorial (Jest + React Testing Library)"
+      }
+    ],
+    "HTML": []
+  },
+  "videos": [
+    {
+      "youtubeId": "SqcY0GlETPk",
+      "title": "React js in short",
+      "tags": [
+        "React",
+        "JavaScript"
+      ]
+    },
+    {
+      "youtubeId": "6wf5dIrryoQ",
+      "title": "All React Hooks Explained in 2 Hours | Complete React Hooks Tutorial with Example 2024",
+      "tags": [ "React", "JavaScript", "Hooks", "Functional Programming", "Long" ]
+    },
+    {
+      "youtubeId": "HkWxvB1RJq0",
+      "title": "Higher-Order Functions ft. Functional Programming | Namaste JavaScript",
+      "tags": [ "React", "JavaScript", "Functional Programming", "Higher-Order Functions" ]
+    },
+    {
+      "youtubeId": "m_mtV4YaI8c",
+      "title": "React Component Lifecycle - Hooks / Methods Explained",
+      "tags": [ "React", "JavaScript", "Hooks", "Lifecycle", "useEffect" ]
+    },
+    {
+      "youtubeId": "O6P86uwfdR0",
+      "title": "Learn useState In 15 Minutes - React Hooks Explained",
+      "tags": [ "React", "JavaScript", "Hooks", "useState" ]
+    },
+    {
+      "youtubeId": "poQXNp9ItL4",
+      "title": "Redux Tutorial - Learn Redux from Scratch",
+      "tags": [ "React", "JavaScript", "Redux" ]
+    },
+    {
+      "youtubeId": "I2Bgi0Qcdvc",
+      "title": "Custom Hooks in React (Design Patterns)",
+      "tags": [ "React", "JavaScript", "Hooks", "Custom Hooks" ]
+    },
+    {
+      "youtubeId": "JU6sl_yyZqs",
+      "title": "Speed Up Your React Apps With Code Splitting",
+      "tags": [ "React", "JavaScript", "Code Splitting", "Suspence" ]
+    },
+    {
+      "youtubeId": "D3d1lyDR3xc",
+      "title": "ReactJS Tutorial: What is DOM? Real DOM & Virtual DOM. Virtual DOM in React with Example 🔥",
+      "tags": [ "React", "JavaScript", "DOM", "Virtual DOM" ]
+    },
+    {
+      "youtubeId": "p02AIAoImzU",
+      "title": "WTF Do These Even Mean",
+      "tags": [ "React", "JavaScript", "DOM", "Virtual DOM" ]
+    },
+    {
+      "youtubeId": "oUZjO00NkhY",
+      "title": "React Protected Routes | Role-Based Authorization | React Router v6",
+      "tags": [ "React", "JavaScript", "Router", "Protected Routes", "Authorization" ]
+    },
+    {
+      "youtubeId": "ML5egqL3YFE",
+      "title": "React Testing Tutorial (Jest + React Testing Library)",
+      "tags": [ "React", "JavaScript", "Testing", "Jest", "React Testing Library" ]
+    }
+  ]
+}
