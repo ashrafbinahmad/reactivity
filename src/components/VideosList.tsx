@@ -1,5 +1,6 @@
 import React from "react";
 import { getAllVideos, getThumbUrlOf, Video } from "../sources/helper";
+import { useNavigate } from "react-router-dom";
 
 const videos = getAllVideos();
 
@@ -20,8 +21,9 @@ interface VideoThumbPropsType {
 }
 
 export const VideoThumb = ({ video }: VideoThumbPropsType) => {
+  const navigate = useNavigate();
   return (
-    <div className="overflow-hidden shadow-inner basis-56">
+    <div className="overflow-hidden shadow-inner cursor-pointer basis-56" onClick={()=> navigate(`/videos/${video.youtubeId}`)}>
       <img
         className="rounded-xl"
         src={getThumbUrlOf(video.youtubeId)}

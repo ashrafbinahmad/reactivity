@@ -4,10 +4,13 @@ import {
   getAllStepsFor,
   getAllStepsForAdvanced,
   getThumbUrlOf,
+  Step,
   Steps,
+  Video,
 } from "../sources/helper";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { Swiper as SwiperType } from "swiper";
+import { useNavigate } from "react-router-dom";
 
 interface CarouselVideosPropsType {
   filterType?: keyof Steps;
@@ -16,6 +19,7 @@ interface CarouselVideosPropsType {
 export default function CarouselVideos({
   filterType = "advanced",
 }: CarouselVideosPropsType) {
+  const navigate = useNavigate();
   const swiperRef = useRef<SwiperType | null>(null);
   const videos = getAllStepsFor(filterType);
 
@@ -28,18 +32,20 @@ export default function CarouselVideos({
   }
 
   function handleSlideClick(
-    e: React.MouseEvent<HTMLElement, globalThis.MouseEvent>
+    e: React.MouseEvent<HTMLElement, globalThis.MouseEvent>,
+    video: Step
   ) {
     const classList = e.currentTarget.classList;
     if (classList.contains("swiper-slide-prev")) handlePrevSlideClick();
     else if (classList.contains("swiper-slide-next")) handleNextSlideClick();
+    else navigate(`/videos/${video.youtubeId}`);
   }
 
   return (
     <div className="">
       <Swiper
         translate="yes"
-        className="bg-seconadaryLight"
+        className="bg-seconadaryLight cursor-pointer"
         spaceBetween={-50}
         slidesPerView={1.75}
         onSlideChange={() => console.log("slide change")}
@@ -51,8 +57,8 @@ export default function CarouselVideos({
         centeredSlides
       >
         {videos.map((video, index) => (
-          <SwiperSlide className="" onClick={(e) => handleSlideClick(e)}>
-            <div className="relative  overflow-hidden shadow-inner shadow-black">
+          <SwiperSlide className="" onClick={(e) => handleSlideClick(e, video)}>
+            <div className="relative overflow-hidden shadow-inner shadow-black">
               <img src={getThumbUrlOf(video.youtubeId)} alt="" />
               <div className="absolute bottom-[2rem] w-full text-white z-20">
                 <div className="grid justify-center flex-col items-center grid-cols-[4rem_auto] w-full gap-4">
@@ -72,16 +78,16 @@ export default function CarouselVideos({
             </div>
           </SwiperSlide>
         ))}
-        <div className="flex justify-end mr-5 gap-1 relative z-50 -top-5 ">
+        <div className="relative z-50 flex justify-end gap-1 mr-5 -top-5 ">
           <FaArrowCircleLeft
             color="white"
-            className="opacity-40 hover:opacity-100 cursor-pointer backdrop-blur-sm"
+            className="cursor-pointer opacity-40 hover:opacity-100 backdrop-blur-sm"
             size={50}
             onClick={handlePrevSlideClick}
           />
           <FaArrowCircleRight
             color="white"
-            className="opacity-40 hover:opacity-100 cursor-pointer backdrop-blur-sm"
+            className="cursor-pointer opacity-40 hover:opacity-100 backdrop-blur-sm"
             size={50}
             onClick={handleNextSlideClick}
           />

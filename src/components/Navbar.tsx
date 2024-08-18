@@ -1,30 +1,29 @@
-import React from "react";
-import { FaSearch, FaUser } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="bg-seconadary border-b border-[#ffffff30]">
-      <div className="container m-auto flex text-white justify-stretch gap-5">
+    <div className="border-[#ffffff30] bg-seconadary border-b">
+      <div className="flex justify-stretch gap-5 m-auto text-white container">
         <a
           href="/#"
-          className="LEFT container flex items-center text-white gap-2 p-3 w-min"
+          className="flex items-center gap-2 p-3 w-min text-white container LEFT"
         >
-          <span className="logo bg-primary text-white w-10 h-10 text-center flex justify-center align-middle rounded-full pt-1 text-lg text-">
+          <span className="flex justify-center bg-primary pt-1 rounded-full w-10 h-10 text- text-center text-lg text-white align-middle logo">
             r.
           </span>
-          <h1 className="text-xl font-bold ">Reactivity.</h1>
+          <h1 className="font-bold text-xl">Reactivity.</h1>
         </a>
-        <div className="MENU-DIV self-end  w-full relative">
-          <ul className="MENU flex gap-4 font-semibold">
-            <li className="ITEM py-5 border-b-primaryLight  border-b-4 ">
+        <div className="relative w-full MENU-DIV self-end">
+          <ul className="flex gap-4 font-semibold MENU">
+            <li className="py-5 border-b-4 border-b-primaryLight ITEM">
               Videos
             </li>
-            <li className="ITEM py-5 opacity-90">Documents</li>
+            <li className="opacity-90 py-5 ITEM">Documents</li>
           </ul>
-          {/* <span className="w-40 h-16 bg-primary"></span> */}
+          {/* <span className="bg-primary w-40 h-16"></span> */}
         </div>
-        <div className="RIGHT self-center flex items-center gap-4">
-          <div className="SEARCH bg-[#ffffff30] px-5 py-2 rounded-3xl w-96 flex items-center gap-2">
+        <div className="flex items-center gap-4 RIGHT self-center">
+          <div className="flex items-center gap-2 bg-[#ffffff30] px-5 py-2 rounded-3xl w-96 SEARCH">
             <FaSearch />
             <input
               type="text"
@@ -32,14 +31,14 @@ export default function Navbar() {
               id="searchBox"
               autoComplete="false"
               placeholder="Search react js Docs and Videos"
-              className="bg-[transparent] outline-0 w-full"
+              className="bg-[transparent] w-full outline-0"
             ></input>
           </div>
-          {/* <div className="USER flex items-center justify-center w-10 h-10 bg-primary rounded-full">
+          {/* <div className="flex justify-center items-center bg-primary rounded-full w-10 h-10 USER">
             <FaUser />
           </div> */}
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
